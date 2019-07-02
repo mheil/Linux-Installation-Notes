@@ -20,4 +20,12 @@ Simply source the bash completion script in the `.bashrc` from the git sources:
 A really cool bash prompt for git is found under: 
 https://github.com/magicmonty/bash-git-prompt[magic monty]
 
-Configruation: use default settings despite of disabling `GIT_PROMPT_ONLY_IN_REPO=1`
+Configruation:
+
+* use default settings
+* disable
++
+`GIT_PROMPT_ONLY_IN_REPO=1`
+* configure custom theme:
++
+`GIT_PROMPT_THEME=Custom`
