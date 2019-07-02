@@ -1,0 +1,4 @@
+# Linux Installation Notes
+
+This repository is meant to hold information about Linux installations which I would normally forget cause I don't reinstall my system on a regulary basis.
+
