@@ -2,20 +2,20 @@
 
 This repository is meant to hold information about Linux installations which I would normally forget cause I don't reinstall my system on a regulary basis.
 
-# Git
+## Git
 
-## Installation from source
+### Installation from source
 
 Installation from source is documented on 
 https://git-scm.com/book/en/v2/Getting-Started-Installing-Git[Git Book] .
 
-## Bash Completion (with checked out sources)
+### Bash Completion (with checked out sources)
 
 Simply source the bash completion script in the `.bashrc` from the git sources:
 
  source $GIT_SRC/git/contrib/completion/git-completion.bash
 
-## Git bash prompt
+### Git bash prompt
 
 A really cool bash prompt for git is found under: 
 https://github.com/magicmonty/bash-git-prompt[magic monty]
@@ -26,6 +26,23 @@ Configruation:
 * disable
 +
 `GIT_PROMPT_ONLY_IN_REPO=1`
+
 * configure custom theme:
 +
 `GIT_PROMPT_THEME=Custom`
+
+
+## Games
+
+### MTG Arena (Manjaro)
+
+Installation via Lutris is relatively simple, but during installation (after installing .Net) the following error might occur:
+
+ Cannot access URL: https://mtgarena.downloads.wizards.com/Installers/Windows32/0.1.893.0/Live/MTGAInstaller.msi`
+
+This might be caused by a missing (or wrong / outdated version of) TLS library.
+
+Solution might therefore be:
+
+* install an updated version of `gnutls` / `lib32_gnutls`
+* install `wine-staging`
