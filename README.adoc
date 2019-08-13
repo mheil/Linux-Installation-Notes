@@ -46,3 +46,25 @@ Solution might therefore be:
 
 * install an updated version of `gnutls` / `lib32_gnutls`
 * install `wine-staging`
+
+## Sharing Keyboard and Mouse between Linux/Windows/MaxOs using barrier
+
+For sharing keyboard and mouse, barrier (which is a fork from synergy) does a very good job.
+
+### Install on Manjaro
+For Manjaro, it can be easily installed via aur (package name is barrier).
+
+### Compile / Install on CentOS
+
+As there is no rpm in the official repositories, one way of installing barrier is to compile
+it by hand. For compiling barrier, avahi-compat-libdns_sd might be missing.
+Dragging and Dropping in the server configuration windows does not seem to work at the moment.
+
+ # fetch sources from github
+ git clone https://github.com/debauchee/barrier.git
+
+ #compile barrier
+ ./clean_bui.d.sh
+
+#### install missing avahi dependency
+ yum install avahi-compat-libdns_sd-devel.x86_64
