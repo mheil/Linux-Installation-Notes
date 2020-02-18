@@ -21,6 +21,8 @@ A really cool bash prompt for git is found under:
 https://github.com/magicmonty/bash-git-prompt[magic monty]
 
 Configruation:
+configuration is done by setting the following environment variables.
+To enable the custom theme, copy or link the .git-prompt-colors.sh contained in this repository into your home dir.
 
 * use default settings
 * disable
@@ -30,7 +32,6 @@ Configruation:
 * configure custom theme:
 +
 `GIT_PROMPT_THEME=Custom`
-
 
 ## Games
 
