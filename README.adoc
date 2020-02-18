@@ -22,7 +22,6 @@ https://github.com/magicmonty/bash-git-prompt[magic monty]
 
 Configruation:
 configuration is done by setting the following environment variables.
-To enable the custom theme, copy or link the .git-prompt-colors.sh contained in this repository into your home dir.
 
 * use default settings
 * disable
@@ -32,6 +31,8 @@ To enable the custom theme, copy or link the .git-prompt-colors.sh contained in 
 * configure custom theme:
 +
 `GIT_PROMPT_THEME=Custom`
+
+ This will enable a custom theme, that is installed by copying or linking the .git-prompt-colors.sh from this repository into the homedir.
 
 ## Games
 
